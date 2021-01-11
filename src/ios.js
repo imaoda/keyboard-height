@@ -4,7 +4,7 @@ function isSame(a, b) {
   return Math.abs(a - b) < 0.01;
 }
 let lastHeight = -1;
-export default function (cbArr) {
+export default function(cbArr) {
   if (!vp) return;
   function emit() {
     var delta = getIosHeight();
@@ -14,14 +14,13 @@ export default function (cbArr) {
       cb.call(null, lastHeight);
     });
   }
-  vp.onscroll = function () {
+  vp.onscroll = function() {
     emit();
   };
-  vp.onresize = function () {
+  vp.onresize = function() {
     emit();
   };
 }
-
 export function getIosHeight() {
   if (!vp) return 0;
   return document.documentElement.clientHeight - vp.height;

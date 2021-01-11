@@ -1,18 +1,15 @@
 {
   "name": "keyboard-height",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "calaculate the height of soft keyboard in mobile phone and emit on changes",
   "main": "index.js",
   "repository": "https://github.com/imaoda/keyboard-height",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
-    "soft",
     "keyboard",
     "height",
-    "viewport",
-    "mobile"
+    "safari",
+    "visualViewport",
+    "viewport"
   ],
   "author": "wangyongfeng",
   "license": "MIT"

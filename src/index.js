@@ -7,12 +7,14 @@ class KeyboardObserver {
     if (isAndroid) initAndroid(this.cbArr_);
     else if (isIos) initIos(this.cbArr_);
   }
+
   on(cb) {
     if (this.cbArr_.indexOf(cb) === -1 && typeof cb === "function") {
       this.cbArr_.push(cb);
     }
     return this;
   }
+
   off(cb) {
     var index = this.cbArr_.indexOf(cb);
     if (index !== -1) {
@@ -20,6 +22,7 @@ class KeyboardObserver {
     }
     return this;
   }
+
   getHeight() {
     if (isAndroid) return getAndroidHeight();
     else if (isIos) return getIosHeight();
